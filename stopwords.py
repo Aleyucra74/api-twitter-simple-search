@@ -12,7 +12,8 @@ def remove_stop_words_text(text):
     for w in word_tokens:
         if w not in stop_words:
             filtered_sentence.append(w)
-    
+
+    filtered_sentence = " ".join(str(x) for x in filtered_sentence)
     # print(word_tokens)
     # print(filtered_sentence)
     return filtered_sentence
